@@ -1,0 +1,152 @@
+.main-form {
+    height: 82vh;
+}
+
+.title {
+    margin-bottom: 2rem;
+    font-size: 20pt;
+    text-align: center;
+}
+
+.register-container {
+    height: 80vh;
+}
+
+.register-card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: var(--radius);
+    background-color: white;
+    padding: 2rem;
+    height: 70%;
+    width: 60%;
+}
+
+.data {
+    width: 70%;
+
+}
+
+.profile,
+.data {
+    height: 100%;
+}
+
+.profile {
+    width: 30%;
+}
+
+.input-section {
+    width: 80%;
+}
+
+.input-section {
+    border: solid thin black;
+    margin-bottom: 1.5rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    padding: 0.5rem;
+}
+
+.input-auth,
+.input-auth-nome {
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 0.5rem 0;
+}
+
+.input-auth-login {
+    padding: 0.5rem 0;
+    outline: none;
+    border: none;
+    width: 80%;
+}
+
+.erros {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: red;
+}
+
+.erro {
+    margin: 1rem;
+}
+
+.form-icon-login {
+    padding: 0.5rem 0;
+    font-size: 2rem;
+}
+
+#curso {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 0.5rem 0;
+
+}
+
+.input-auth::placeholder {
+    color: black;
+}
+
+.data {
+    border-right: solid thin var(--border-color);
+}
+
+.image-area {
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+    height: 35%;
+    width: 60%;
+}
+
+.image {
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+.image-previa, .image-previa-mobile {
+    border-radius: 50%;
+    display: none;
+}
+
+#profile {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+#btn-carregar {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    background-color: var(--primary-header);
+    border-radius: 2rem;
+    border: none;
+    font-weight: 600;
+    font-size: 12pt;
+    padding: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-margin {
+    margin-top: 6rem;
+}
+
+.form-icon {
+    height: 100%;
+    font-size: 2rem;
+}
+
+.name-icon {
+    font-size: 2rem;
+}
+
+.span {
+    font-size: 12pt;
+}
+
+.profile-mobile {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}

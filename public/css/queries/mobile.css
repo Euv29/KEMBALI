@@ -1,0 +1,262 @@
+@media screen and (max-width: 414px) {
+
+    .mobile-nav {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+        height: 100%;
+        width: 35%;
+    }
+
+    .navbar {
+        margin-right: 1rem;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    #date,
+    .username,
+    #disciplina {
+        font-size: 1.3rem;
+    }
+
+    #date:hover {
+        border-bottom: none;
+        letter-spacing: 0;
+        cursor: default;
+    }
+
+    .normal-text {
+        font-size: 1.2rem;
+    }
+
+    .nav-list,
+    .notification-right {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .notification-popup {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        border-top-right-radius: 0rem;
+        border-top-left-radius: 0rem;
+        background-color: white;
+        position: fixed;
+        margin: auto;
+        z-index: 100;
+        width: 100%;
+        top: 6.5rem;
+        right: 0;
+    }
+
+    .mobile-link {
+        width: 30%;
+        background-color: red;
+    }
+
+    .register-container {
+        height: 60vh;
+    }
+
+
+    .profile {
+        visibility: hidden;
+    }
+
+    .profile-mobile {
+        visibility: visible;
+        height: 30%;
+        width: 100%;
+    }
+
+    .image-area {
+        height: 70%;
+    }
+
+    .main-form {
+        margin-top: 30vh;
+        height: 40vh;
+    }
+
+    .register-card {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .register {
+        height: 60vh;
+    }
+
+    .form-area {
+        overflow-y: hidden;
+        margin-bottom: 0;
+        height: 70vh;
+    }
+
+    .erros {
+        font-size: 12pt;
+        text-align: center;
+    }
+
+    .input-section {
+        width: 90%;
+    }
+
+    .imagem-area {
+        border: solid thin var(--border-color);
+        margin-bottom: 2rem;
+        border-radius: 2rem;
+        overflow: hidden;
+        height: 30vh;
+    }
+
+    .create-post-area {
+        width: 90%;
+    }
+
+    .tag-create a,
+    .tag-create select {
+        font-size: 1.3rem;
+    }
+
+    .create-post-area textarea {
+        font-size: 1.2rem;
+    }
+
+    .create-post-area .select-image {
+        font-size: 1.2rem;
+    }
+
+    .post-area-show {
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+
+    .post-image-show {
+        width: 100%;
+        aspect-ratio: 91/1;
+    }
+
+    .post-card-show {
+        width: 100%;
+    }
+
+    .post-imagem-pop-up .imagem-popup {
+        width: 90%;
+        aspect-ratio: 1/1;
+    }
+
+    .data {
+        width: 100%;
+        border: none;
+    }
+
+    .user-menu {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        z-index: 100;
+        width: 100%;
+        top: 6.5rem;
+        right: 0;
+        font-size: 1.3rem;
+    }
+
+    .user-menu ul li {
+        font-size: 1.2rem;
+    }
+
+    .tag-create {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-post-area {
+        flex-direction: column;
+    }
+
+    #btn-create {
+        margin-top: 2rem;
+        font-size: 14pt;
+    }
+
+    #search-form {
+        background-color: white;
+        border: solid thin var(--border-color);
+        border-radius: var(--radius);
+        overflow: hidden;
+        padding: 0.3rem;
+        width: 80%;
+
+    }
+
+    #search {
+        outline: none;
+        padding: 1rem;
+        border: none;
+        width: 90%;
+
+    }
+
+    .btn-carregar-mobile {
+        display: flex;
+    }
+
+    .image-container .img-area {
+        text-align: center;
+        aspect-ratio: 1/1;
+        overflow: hidden;
+        width: 40%;
+    }
+
+    .post-imagem-pop-up .imagem-popup {
+        transform: translate(-50%, -50%);
+        position: absolute;
+        width: 90%;
+        aspect-ratio: 1/1;
+        left: 50%;
+        top: 50%;
+    }
+
+    .footer-container {
+        /* box-shadow: rgba(60, 64, 67, 0.3) 0px -1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+        box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45);
+
+        background: #ffffff;
+        position: fixed;
+        width: 100vw;
+        height: 8vh;
+        z-index: 1;
+        bottom: 0;
+    }
+
+    .footer-container {
+        visibility: visible;
+        width: 100%;
+    }
+
+    .footer-nav {
+        width: 90%;
+        height: 100%;
+    }
+
+    .footer-nav-list {
+        width: 100%;
+        height: 100%;
+    }
+
+    .add-icon {
+        font-size: 5rem;
+        color: var(--primary-header);
+    }
+
+    .footer-icon {
+        font-size: 3rem;
+        color: black;
+    }
+
+}

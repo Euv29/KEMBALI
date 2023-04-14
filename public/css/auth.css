@@ -1,0 +1,219 @@
+.form-login {
+    height: 90vh;
+    width: 100vw;
+}
+
+.form-inputs,
+.create-disciplina-card {
+    position: fixed;
+    top: 13rem;
+    background-color: white;
+    font-size: 1.5rem;
+    height: 70vh;
+    width: 60vw;
+    display: flex;
+    border-radius: 2rem;
+    box-shadow: 0rem 0.8rem 2.4rem #9AAACF;
+}
+
+.form-title {
+    color: rgb(255, 130, 5);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+}
+
+.group-input {
+    margin-bottom: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    height: 6rem;
+    width: 50%;
+}
+
+.group-input input {
+    padding-top: 2rem;
+    color: #595f6e;
+    font-size: 2rem;
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+
+.group-input label {
+    border-bottom: 0.1rem solid black;
+    pointer-events: none;
+    position: absolute;
+    font-size: 2.4rem;
+    height: 100%;
+    width: 100%;
+    bottom: 0rem;
+    left: 0%;
+}
+
+.group-input label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.2rem;
+    height: 100%;
+    width: 100%;
+    border-bottom: 0.4rem solid rgba(255, 166, 0, 1);
+    transform: translate(-100%);
+    transition: transform 0.3s ease;
+}
+
+.content-label {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0rem;
+    transition: all 0.3s ease;
+}
+
+/*Levantar o placeholder e mover a borda*/
+.group-input input:not(:placeholder-shown)+.label-email .content-label,
+.group-input input:focus+.label-email .content-label,
+.group-input input:valid+.label-email .content-label {
+    transform: translateY(-150%);
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.group-input input:focus+label::after,
+.group-input input:valid+label::after {
+    transform: translateX(-0%);
+}
+
+/*Se for válido*/
+.group-input input:valid+.label-email .content-label {
+    color: green;
+}
+
+.group-input input:valid+label::after {
+    border-bottom: 0.4rem solid green;
+}
+
+/* Se for inválido */
+.group-input input:invalid+.label-email .content-label {
+    color: red;
+}
+
+.group-input input:invalid+label::after {
+    border-bottom: 0.4rem solid red;
+}
+
+.group-input input:placeholder-shown+.label-email .content-label {
+    color: black;
+}
+
+/*Button Submit*/
+.form-inputs>button,
+.form-inputs-register>button,
+.create-disciplina-card>button {
+    margin-top: 3rem;
+    height: 6vh;
+    width: 40%;
+
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: white;
+
+    cursor: pointer;
+    border: solid thin rgba(255, 166, 0, 1);
+    border-radius: 2rem;
+
+
+    background-color: rgba(255, 166, 0, 1);
+    box-shadow: 3px 3px 4px rgb(173, 164, 137);
+
+    transition: all 0.6s ease;
+}
+
+.form-inputs>button:hover,
+.form-inputs-register>button:hover,
+.create-disciplina-card>button:hover {
+    letter-spacing: 0.1rem;
+    background-color: rgb(255, 130, 5);
+}
+
+.register-link-area {
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.register-link {
+    color: rgba(255, 166, 0, 1);
+    transition: all 0.4s ease;
+    text-align: center;
+    font-size: 14pt;
+}
+
+.register-link:hover {
+    letter-spacing: 0.1rem;
+    color: rgb(255, 130, 5);
+    border-bottom: 1px solid rgb(255, 130, 5);
+}
+
+/* Register Card */
+.form-inputs-register {
+    box-shadow: 0px 8px 24px #9AAACF;
+    background-color: white;
+    position: fixed;
+    top: 8.5rem;
+    font-size: 1rem;
+    height: 85vh;
+    width: 60vw;
+    display: flex;
+    border-radius: 2rem;
+}
+
+
+#register-title {
+    margin-top: 2rem;
+}
+
+.form-inputs-register .group-input {
+    margin: 0.4rem 0rem;
+    padding: 0.5rem;
+}
+
+.form-inputs-register .group-input input {
+    font-size: 13pt;
+    padding-bottom: 1rem;
+}
+
+.group-input-image {
+    height: 20vh;
+    margin-bottom: 0rem;
+}
+
+.group-input-image input {
+    display: none;
+}
+
+.group-input-image .image-area {
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    height: 80%;
+}
+
+.group-input-image .image-area img {
+    width: 100%;
+    height: 100%;
+}
+
+.group-input-image label {
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+#btn-submit-register {
+    margin-top: 2rem;
+}
+
+.login-link-area {
+    margin: 0.5rem 0rem;
+}

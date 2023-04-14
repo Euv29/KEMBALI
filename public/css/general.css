@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+
+    /* colors */
+    --primary-header: rgba(255, 138, 0, 1);
+    --second-header: rgba(255, 166, 0, 1);
+    --border-color: #b1b0b0d0;
+    --icons-color: white;
+    --confirm: #69c469;
+
+    /* sizes */
+    --post-icon-size: 2rem;
+    --basic-padding: 1rem;
+    --header-margin: 1rem;
+    --post-margin: 4rem;
+    --logo-size: 4rem;
+    --radius: 1rem;
+}
+
+*,
+::before,
+::after,
+body {
+    font-family: 'Quicksand';
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+*::placeholder {
+    color: black;
+}
+
+.title{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.msg-container {
+    background-color: var(--confirm);
+    align-items: center;
+    border-radius: 3rem;
+    margin: 0 0 2rem 0;
+    padding: 1rem;
+    display: flex;
+
+    /*Animação*/
+    animation-name: deslizar;
+    animation-duration: 3s;
+}
+
+.mensagem {
+    font-size: 1.8rem;
+    margin: 0 1.5rem;
+}
+
+.disciplina-criar {
+    margin-left: 1rem;
+}
+
+.errors {
+    color: red;
+    text-align: justify;
+    padding: 0 2rem;
+    font-size: 14pt;
+}
+
+.error-icon {
+    margin-right: 0.3rem;
+}
+
+/*
+.error {
+    background-color: red;
+    align-items: center;
+    border-radius: 3rem;
+    text-align: center;
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 40%;
+}
+
+.erro{
+    font-size: 12pt;
+} */
+
+.icon-link {
+    color: black;
+}
+
+#alert-icon {
+    color: var(--icons-color);
+    font-size: 3rem;
+}
+
+@keyframes deslizar {
+    from {
+        margin-right: -180%;
+    }
+
+    to {
+        margin-right: 0%;
+    }
+}
+
+/* FlexBox */
+.flex {
+    display: flex;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+
+.normal-text {
+    font-size: 1.8rem;
+}
+
+.informative-text {
+    font-size: 1.4rem;
+}
+
+/* Icons */
+.header-icon {
+    font-size: 3rem;
+}
+
+/* Editar perfil */
+
+.editar-perfil header h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.editar-perfil header p {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.editar-perfil form div label {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.editar-perfil form div input {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: black;
+}
+
+.editar-perfil button {
+    padding: var(--basic-padding);
+    font-size: 1.8rem;
+}
+
+.popup-delete {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50vh, -50vw);
+}
