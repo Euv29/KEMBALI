@@ -9,6 +9,9 @@ export default defineConfig({
     }),
   ],
   build: {
-    outDir: 'public/build' // define o diretório de saída como public/build
+    outDir: 'public/build',
+    rollupOptions: {
+      external: ['alpinejs']
+    }
   }
 });
