@@ -13,7 +13,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "resources/views/perguntas/index.blade.php"
     }
   ],
   "env": {
