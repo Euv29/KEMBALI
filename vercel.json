@@ -1,5 +1,8 @@
 {
   "version": 2,
+  "functions":{
+      "api/index.php": {"runtime":"vercel-php@0.4.0"}
+  },
   "builds": [
     {
       "src": "package.json",
@@ -8,12 +11,8 @@
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/api/index.php"
-    },
-    {
       "src": "/(.*)",
-      "dest": "resources/views/perguntas/index.blade.php"
+      "dest": "/api/index.php"
     }
   ],
   "env": {
